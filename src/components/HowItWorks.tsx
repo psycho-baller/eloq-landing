@@ -1,15 +1,15 @@
 const steps = [
   {
-    title: "Save what you overuse",
-    body: "Track the words that keep weakening your writing.",
+    title: "Catch your defaults",
+    body: "Save the words and phrases you keep falling back on.",
   },
   {
-    title: "Connect better alternatives",
-    body: "Build your own replacement relationships, manually first.",
+    title: "Link better language",
+    body: "Add the words you want yourself, then let AI suggest more when useful.",
   },
   {
-    title: "Let the graph travel",
-    body: "The Mac app stays canonical. Obsidian and the browser extension read from it.",
+    title: "Build effortless recall",
+    body: "Eloq brings those links back while you revise so stronger wording becomes natural.",
   },
 ];
 
@@ -18,8 +18,12 @@ export default function HowItWorks() {
     <section id="how-it-works" className="site-section">
       <div className="site-container">
         <div className="section-heading">
-          <p className="section-kicker">How It Works</p>
-          <h2 className="section-title">A vocabulary graph, not another writing dashboard</h2>
+          <p className="section-kicker">How Eloq Helps</p>
+          <h2 className="section-title">Eloq trains recall, not just revision</h2>
+          <p className="section-copy">
+            The point is not more feedback. It is making stronger language easier to reach for the
+            next time you write.
+          </p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
