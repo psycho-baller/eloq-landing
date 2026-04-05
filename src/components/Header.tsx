@@ -4,14 +4,14 @@ export const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 md:px-6">
       <div className="site-container">
-        <div className="flex items-center justify-between rounded-full border border-border/80 bg-[rgba(12,14,17,0.78)] px-4 py-3 shadow-[0_20px_60px_rgba(0,0,0,0.32)] backdrop-blur-xl md:px-6">
+        <div className="flex items-center justify-between rounded-2xl border border-border bg-[rgba(255,255,255,0.86)] px-4 py-3 shadow-[0_8px_24px_rgba(12,10,8,0.06)] backdrop-blur md:px-6">
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[hsl(var(--primary))/0.45] bg-[hsl(var(--primary))/0.12] font-mono text-sm text-[hsl(var(--primary))]">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-[#e4f222] font-mono text-sm text-foreground">
               E
             </div>
             <div>
-              <p className="font-display text-2xl leading-none text-foreground">Eloq</p>
-              <p className="text-[10px] uppercase tracking-[0.26em] text-muted-foreground">
+              <p className="font-display text-[1.9rem] leading-none text-foreground">Eloq</p>
+              <p className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                 macOS early access
               </p>
             </div>
@@ -32,7 +32,7 @@ export const Header = () => {
             </a>
           </nav>
 
-          <Button asChild className="rounded-full px-5 text-sm">
+          <Button asChild className="rounded-[10px] border-0 bg-[#e4f222] px-5 text-sm text-foreground shadow-none hover:bg-[#f5ff78]">
             <a href="#waitlist">Join Waitlist</a>
           </Button>
         </div>

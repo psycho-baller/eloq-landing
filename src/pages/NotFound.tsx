@@ -19,7 +19,7 @@ export default function NotFound() {
         </p>
         <Link
           to="/"
-          className="mt-8 inline-flex rounded-full border border-[hsl(var(--primary))/0.45] bg-[hsl(var(--primary))/0.12] px-6 py-3 text-sm uppercase tracking-[0.22em] text-[hsl(var(--primary))] transition-colors hover:bg-[hsl(var(--primary))/0.18]"
+          className="mt-8 inline-flex rounded-[10px] border border-border bg-[#e4f222] px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-[#f5ff78]"
         >
           Back to Eloq
         </Link>

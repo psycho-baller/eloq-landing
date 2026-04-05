@@ -13,7 +13,7 @@ export default function Terms() {
       <Header />
       <main className="px-6 pb-20 pt-32">
         <div className="site-container max-w-4xl">
-          <div className="eloq-panel prose prose-invert max-w-none prose-headings:font-display prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-[hsl(var(--primary))]">
+          <div className="eloq-panel prose max-w-none prose-headings:font-display prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-foreground">
             <h1>Terms</h1>
             <p>
               Eloq is currently a pre-release product. These terms apply to your use of this website and to your submission of an email address to the Eloq waitlist.
