@@ -4,7 +4,7 @@ export default function Pain() {
       <div className="site-container">
         <div className="section-heading">
           <p className="section-kicker">The Problem</p>
-          <h2 className="section-title max-w-[11ch]">Your idea is sharper than the sentence that lands.</h2>
+          <h2 className="section-title">Your idea is sharper than the sentence that lands.</h2>
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center">

@@ -19,7 +19,7 @@ export default function HowItWorks() {
       <div className="site-container">
         <div className="section-heading">
           <p className="section-kicker">How It Works</p>
-          <h2 className="section-title max-w-[12ch]">A vocabulary graph, not another writing dashboard.</h2>
+          <h2 className="section-title">A vocabulary graph, not another writing dashboard.</h2>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">

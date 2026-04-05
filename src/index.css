@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -141,9 +141,9 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: "Source Sans 3", system-ui, sans-serif;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
     min-height: 100vh;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
     background:
       radial-gradient(circle at 50% 0%, var(--space-glow) 0%, transparent 36%),
       radial-gradient(circle at 85% 12%, var(--space-glow-secondary) 0%, transparent 24%),
@@ -242,7 +242,7 @@
   }
 
   .section-heading {
-    @apply mb-10 max-w-3xl;
+    @apply mb-10 max-w-5xl;
   }
 
   .section-kicker {
@@ -359,9 +359,9 @@
 
 @layer utilities {
   .font-display {
-    font-family: "Baskervville", Georgia, serif;
-    font-weight: 400;
-    letter-spacing: -0.03em;
+    font-family: "Sora", "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.05em;
     font-kerning: normal;
     font-feature-settings: "liga", "kern";
   }

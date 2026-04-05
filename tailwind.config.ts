@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Source Sans 3", "sans-serif"],
-        display: ["Baskervville", "serif"],
+        sans: ["Plus Jakarta Sans", "sans-serif"],
+        display: ["Sora", "Plus Jakarta Sans", "sans-serif"],
         mono: ["IBM Plex Mono", "monospace"],
       },
       colors: {
