@@ -10,7 +10,7 @@ export default function Pain() {
         <div className="grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
           <article className="problem-card">
             <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What You Mean</p>
-            <p className="mt-4 font-display text-[2.45rem] leading-[1.02] text-foreground md:text-[2.8rem]">
+            <p className="mt-4 font-display text-[2.15rem] leading-[1.02] text-foreground md:text-[2.45rem]">
               “The constraint is structural, not technical.”
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -26,7 +26,7 @@ export default function Pain() {
 
           <article className="problem-card">
             <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What Lands</p>
-            <p className="mt-4 font-display text-[2.45rem] leading-[1.02] text-foreground md:text-[2.8rem]">
+            <p className="mt-4 font-display text-[2.15rem] leading-[1.02] text-foreground md:text-[2.45rem]">
               “This thing is interesting, but kind of hard.”
             </p>
             <div className="mt-5 flex flex-wrap gap-2">

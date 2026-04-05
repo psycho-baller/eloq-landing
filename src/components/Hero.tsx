@@ -7,7 +7,7 @@ const Hero = () => {
 
       <div className="site-container">
         <div className="relative z-10 mx-auto max-w-6xl text-center">
-          <h1 className="mx-auto text-[3.9rem] font-display leading-[0.84] text-foreground sm:text-[5.1rem] md:text-[6.9rem]">
+          <h1 className="mx-auto text-[3.4rem] font-display leading-[0.84] text-foreground sm:text-[4.55rem] md:text-[6.05rem]">
             Know the words that keep <span className="text-primary">flattening what you mean.</span>
           </h1>
 
