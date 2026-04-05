@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-mono text-sm text-primary-foreground">
               E
             </div>
-            <p className="font-display text-[1.9rem] leading-none text-foreground">Eloq</p>
+            <p className="font-display text-[2rem] leading-none text-foreground">Eloq</p>
           </a>
 
           <Button asChild className="rounded-full border-0 bg-primary px-5 text-sm text-primary-foreground shadow-none hover:opacity-90">

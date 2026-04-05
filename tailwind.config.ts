@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Source Sans 3", "sans-serif"],
-        display: ["Cormorant Garamond", "serif"],
+        display: ["Baskervville", "serif"],
         mono: ["IBM Plex Mono", "monospace"],
       },
       colors: {

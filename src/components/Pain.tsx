@@ -4,13 +4,13 @@ export default function Pain() {
       <div className="site-container">
         <div className="section-heading">
           <p className="section-kicker">The Problem</p>
-          <h2 className="section-title">Your idea is sharper than the sentence that lands.</h2>
+          <h2 className="section-title max-w-[11ch]">Your idea is sharper than the sentence that lands.</h2>
         </div>
 
         <div className="grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
           <article className="problem-card">
             <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What You Mean</p>
-            <p className="mt-4 font-display text-3xl leading-tight text-foreground">
+            <p className="mt-4 font-display text-[2.45rem] leading-[1.02] text-foreground md:text-[2.8rem]">
               “The constraint is structural, not technical.”
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
@@ -26,7 +26,7 @@ export default function Pain() {
 
           <article className="problem-card">
             <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What Lands</p>
-            <p className="mt-4 font-display text-3xl leading-tight text-foreground">
+            <p className="mt-4 font-display text-[2.45rem] leading-[1.02] text-foreground md:text-[2.8rem]">
               “This thing is interesting, but kind of hard.”
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
