@@ -6,44 +6,129 @@
 
 @layer base {
   :root {
-    --background: 36 20% 98%;
-    --foreground: 25 20% 4%;
+    color-scheme: light;
 
-    --card: 30 17% 94%;
-    --card-foreground: 25 20% 4%;
+    --background: 42 24% 97%;
+    --foreground: 24 18% 6%;
+
+    --card: 40 16% 94%;
+    --card-foreground: 24 18% 6%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 20% 4%;
+    --popover-foreground: 24 18% 6%;
 
     --primary: 64 89% 54%;
-    --primary-foreground: 25 20% 4%;
+    --primary-foreground: 24 18% 6%;
 
-    --secondary: 30 17% 94%;
-    --secondary-foreground: 25 20% 4%;
+    --secondary: 40 16% 94%;
+    --secondary-foreground: 24 18% 6%;
 
-    --muted: 30 17% 94%;
-    --muted-foreground: 25 10% 38%;
+    --muted: 40 16% 94%;
+    --muted-foreground: 24 9% 39%;
 
     --accent: 64 89% 54%;
-    --accent-foreground: 25 20% 4%;
+    --accent-foreground: 24 18% 6%;
 
     --destructive: 10 74% 56%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 10% 81%;
-    --input: 30 10% 81%;
+    --border: 28 10% 80%;
+    --input: 28 10% 80%;
     --ring: 64 89% 54%;
 
     --radius: 1rem;
 
-    --sidebar-background: 36 20% 98%;
-    --sidebar-foreground: 25 20% 4%;
+    --sidebar-background: 42 24% 97%;
+    --sidebar-foreground: 24 18% 6%;
     --sidebar-primary: 64 89% 54%;
-    --sidebar-primary-foreground: 25 20% 4%;
-    --sidebar-accent: 30 17% 94%;
-    --sidebar-accent-foreground: 25 20% 4%;
-    --sidebar-border: 30 10% 81%;
+    --sidebar-primary-foreground: 24 18% 6%;
+    --sidebar-accent: 40 16% 94%;
+    --sidebar-accent-foreground: 24 18% 6%;
+    --sidebar-border: 28 10% 80%;
     --sidebar-ring: 64 89% 54%;
+
+    --surface-shell: rgba(255, 255, 255, 0.64);
+    --surface-panel: rgba(255, 255, 255, 0.88);
+    --surface-soft: rgba(244, 242, 240, 0.92);
+    --field-well: rgba(12, 10, 8, 0.06);
+    --field-line: rgba(12, 10, 8, 0.08);
+    --panel-shadow: 0 18px 42px rgba(12, 10, 8, 0.06);
+
+    --space-glow: rgba(228, 242, 34, 0.18);
+    --space-glow-secondary: rgba(23, 51, 45, 0.1);
+    --hero-ring: rgba(23, 51, 45, 0.08);
+    --hero-ring-strong: rgba(228, 242, 34, 0.22);
+
+    --chip-avoid-bg: rgba(255, 244, 239, 0.95);
+    --chip-avoid-border: rgba(233, 195, 178, 0.85);
+    --chip-avoid-text: #8a5139;
+
+    --chip-target-bg: rgba(245, 249, 234, 0.98);
+    --chip-target-border: rgba(200, 216, 190, 0.92);
+    --chip-target-text: #17332d;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+
+      --background: 160 22% 7%;
+      --foreground: 0 0% 97%;
+
+      --card: 160 18% 11%;
+      --card-foreground: 0 0% 97%;
+
+      --popover: 160 18% 11%;
+      --popover-foreground: 0 0% 97%;
+
+      --primary: 69 82% 64%;
+      --primary-foreground: 24 18% 6%;
+
+      --secondary: 160 15% 13%;
+      --secondary-foreground: 0 0% 97%;
+
+      --muted: 160 15% 13%;
+      --muted-foreground: 145 8% 74%;
+
+      --accent: 69 82% 64%;
+      --accent-foreground: 24 18% 6%;
+
+      --destructive: 10 74% 64%;
+      --destructive-foreground: 0 0% 100%;
+
+      --border: 157 14% 22%;
+      --input: 157 14% 22%;
+      --ring: 69 82% 64%;
+
+      --sidebar-background: 160 22% 7%;
+      --sidebar-foreground: 0 0% 97%;
+      --sidebar-primary: 69 82% 64%;
+      --sidebar-primary-foreground: 24 18% 6%;
+      --sidebar-accent: 160 15% 13%;
+      --sidebar-accent-foreground: 0 0% 97%;
+      --sidebar-border: 157 14% 22%;
+      --sidebar-ring: 69 82% 64%;
+
+      --surface-shell: rgba(19, 27, 25, 0.64);
+      --surface-panel: rgba(19, 27, 25, 0.84);
+      --surface-soft: rgba(24, 34, 31, 0.76);
+      --field-well: rgba(0, 0, 0, 0.24);
+      --field-line: rgba(255, 255, 255, 0.06);
+      --panel-shadow: 0 26px 60px rgba(0, 0, 0, 0.34);
+
+      --space-glow: rgba(217, 239, 89, 0.16);
+      --space-glow-secondary: rgba(23, 51, 45, 0.48);
+      --hero-ring: rgba(255, 255, 255, 0.08);
+      --hero-ring-strong: rgba(217, 239, 89, 0.18);
+
+      --chip-avoid-bg: rgba(76, 43, 37, 0.48);
+      --chip-avoid-border: rgba(139, 84, 68, 0.44);
+      --chip-avoid-text: #ffd3c4;
+
+      --chip-target-bg: rgba(23, 51, 45, 0.58);
+      --chip-target-border: rgba(83, 128, 111, 0.42);
+      --chip-target-text: #dff9e7;
+    }
   }
 
   * {
@@ -59,8 +144,29 @@
     font-family: "Source Sans 3", system-ui, sans-serif;
     min-height: 100vh;
     background:
-      radial-gradient(circle at top left, rgba(228, 242, 34, 0.26), transparent 32%),
-      linear-gradient(180deg, #fffef9 0%, #f4f2f0 100%);
+      radial-gradient(circle at 50% 0%, var(--space-glow) 0%, transparent 36%),
+      radial-gradient(circle at 85% 12%, var(--space-glow-secondary) 0%, transparent 24%),
+      radial-gradient(circle at 15% 18%, var(--space-glow-secondary) 0%, transparent 22%),
+      linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background)) 100%);
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.9) 0.8px, transparent 1px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.55) 0.7px, transparent 0.95px);
+    background-size: 160px 160px, 220px 220px;
+    background-position: 0 0, 50px 70px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body::before {
+      opacity: 0.22;
+    }
   }
 
   #root {
@@ -114,15 +220,22 @@
     @apply relative overflow-hidden px-5 pb-20 pt-32 md:px-8 md:pb-24 md:pt-40;
   }
 
+  .site-header-bar {
+    @apply flex items-center justify-between rounded-2xl border border-border px-4 py-3 backdrop-blur-xl md:px-6;
+    background: var(--surface-shell);
+    box-shadow: 0 10px 28px rgba(12, 10, 8, 0.07);
+  }
+
   .eloq-panel {
-    @apply rounded-[24px] border border-border bg-white p-6 md:p-8;
-    box-shadow:
-      0 1px 0 rgba(12, 10, 8, 0.04),
-      0 12px 30px rgba(12, 10, 8, 0.05);
+    @apply rounded-[24px] border border-border p-6 md:p-8;
+    background: var(--surface-panel);
+    box-shadow: var(--panel-shadow);
+    backdrop-filter: blur(18px);
   }
 
   .eloq-card {
-    @apply rounded-[20px] border border-border bg-[rgba(244,242,240,0.85)] p-6 md:p-7;
+    @apply rounded-[20px] border border-border p-6 md:p-7;
+    background: var(--surface-soft);
   }
 
   .section-heading {
@@ -134,7 +247,7 @@
   }
 
   .section-title {
-    @apply mt-4 font-display text-[2.35rem] leading-[0.98] text-foreground md:text-[3.5rem];
+    @apply mt-4 font-display text-[2.5rem] leading-[0.97] text-foreground md:text-[3.5rem];
   }
 
   .section-copy {
@@ -146,41 +259,100 @@
     background: #e4f222;
   }
 
+  .hero-chip {
+    @apply inline-flex items-center gap-3 rounded-full border border-border px-4 py-2 text-xs uppercase tracking-[0.22em] text-muted-foreground;
+    background: var(--surface-shell);
+  }
+
+  .orbit-gradient {
+    background-image: linear-gradient(90deg, #87d8ff 0%, #c4efb0 48%, #e4f222 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .orbit-hero-glow {
+    position: absolute;
+    left: 50%;
+    top: 6rem;
+    width: min(78vw, 900px);
+    height: min(70vw, 560px);
+    transform: translateX(-50%);
+    pointer-events: none;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle, var(--space-glow) 0%, var(--space-glow-secondary) 40%, transparent 72%);
+    filter: blur(28px);
+    opacity: 1;
+  }
+
+  .orbit-ring {
+    @apply absolute rounded-full border;
+    border-color: var(--hero-ring);
+  }
+
+  .orbit-ring-strong {
+    border-color: var(--hero-ring-strong);
+  }
+
+  .eloq-form-frame {
+    @apply rounded-[28px] border border-border p-5 md:p-6;
+    background: var(--surface-shell);
+    box-shadow: var(--panel-shadow);
+    backdrop-filter: blur(18px);
+  }
+
   .eloq-pill-field {
-    @apply flex flex-col gap-3 rounded-[14px] border border-border bg-white p-2 sm:flex-row sm:items-center;
-    box-shadow: 0 10px 24px rgba(12, 10, 8, 0.05);
+    @apply flex flex-col gap-3 rounded-full border p-1.5 sm:flex-row sm:items-center;
+    background: var(--field-well);
+    border-color: var(--field-line);
   }
 
   .eloq-pill-input {
-    @apply h-14 flex-1 rounded-[10px] border-0 bg-transparent px-4 text-[17px] text-foreground shadow-none placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0;
+    @apply h-14 flex-1 rounded-full border-0 bg-transparent px-5 text-[17px] text-foreground shadow-none placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0;
   }
 
   .eloq-pill-submit {
-    @apply h-12 rounded-[10px] px-6 text-sm font-semibold;
-    background: #e4f222;
-    color: #0c0a08;
+    @apply h-12 rounded-full px-7 text-sm font-semibold shadow-none transition-colors;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
   }
 
   .eloq-pill-submit:hover {
     background: #f5ff78;
   }
 
-  .ramp-accent {
-    background: #e4f222;
-    color: #0c0a08;
+  .problem-card {
+    @apply rounded-[28px] border border-border p-6 md:p-7;
+    background: var(--surface-panel);
+    box-shadow: var(--panel-shadow);
   }
 
-  .ramp-soft {
-    background: #f4f2f0;
+  .problem-bridge {
+    @apply inline-flex rounded-full border border-border px-3 py-2 text-xs uppercase tracking-[0.18em] text-muted-foreground;
+    background: var(--surface-shell);
   }
 
-  .ramp-line {
-    border-color: #d2cecb;
+  .compare-chip {
+    @apply inline-flex rounded-full border px-3 py-1.5 text-sm font-medium;
   }
 
-  .hero-surface {
-    @apply rounded-[28px] border border-border bg-white p-6 md:p-8;
-    box-shadow: 0 18px 40px rgba(12, 10, 8, 0.06);
+  .compare-chip--avoid {
+    background: var(--chip-avoid-bg);
+    border-color: var(--chip-avoid-border);
+    color: var(--chip-avoid-text);
+  }
+
+  .compare-chip--target {
+    background: var(--chip-target-bg);
+    border-color: var(--chip-target-border);
+    color: var(--chip-target-text);
+  }
+
+  .mini-note {
+    @apply rounded-[22px] border border-border p-5;
+    background: var(--surface-shell);
+    box-shadow: var(--panel-shadow);
   }
 }
 

@@ -1,45 +1,60 @@
-const painPoints = [
-  {
-    title: "You already know the sentence is weak",
-    description:
-      "The frustrating part is not detection. You can usually feel when a sentence lands vague, flat, or generic the moment you reread it.",
-  },
-  {
-    title: "But feeling it does not give you a better vocabulary",
-    description:
-      "Most writing tools score, flag, or rewrite after the fact. They do not help you build the set of words you want to have on hand next time.",
-  },
-  {
-    title: "So your real ideas keep arriving diluted",
-    description:
-      "The result is not just weaker prose. It is weaker communication, weaker self-expression, and people missing the point you were actually trying to make.",
-  },
-];
-
 export default function Pain() {
   return (
     <section id="pain" className="site-section">
       <div className="site-container">
         <div className="section-heading">
-          <p className="section-kicker">The Real Problem</p>
-          <h2 className="section-title">The problem is not that you lack feedback. It is that feedback does not compound.</h2>
+          <p className="section-kicker">The Core Problem</p>
+          <h2 className="section-title">The thought starts precise. The sentence settles for weaker stand-ins.</h2>
           <p className="section-copy">
-            Eloq is built for people who are tired of tools that tell them a sentence is weak without helping them build the vocabulary that would have made it stronger in the first place.
+            Most tools intervene after the sentence is already flat. Eloq focuses on the vocabulary gap
+            that keeps producing that sentence in the first place.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
-          {painPoints.map((item) => (
-            <article key={item.title} className="eloq-card">
-              <div className="eyebrow-rule" />
-              <h3 className="text-2xl font-display leading-tight text-foreground">
-                {item.title}
-              </h3>
-              <p className="mt-4 text-base leading-7 text-muted-foreground">
-                {item.description}
-              </p>
-            </article>
-          ))}
+        <div className="grid gap-5 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
+          <article className="problem-card">
+            <div className="eyebrow-rule" />
+            <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What You Mean</p>
+            <p className="mt-4 font-display text-3xl leading-tight text-foreground">
+              “The constraint is structural, not technical.”
+            </p>
+            <p className="mt-4 text-base leading-7 text-muted-foreground">
+              The thought has shape. It has pressure. It has a specific word you actually wanted.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="compare-chip compare-chip--target">constraint</span>
+              <span className="compare-chip compare-chip--target">structural</span>
+              <span className="compare-chip compare-chip--target">tradeoff</span>
+            </div>
+          </article>
+
+          <div className="flex justify-center">
+            <div className="problem-bridge">gets flattened into</div>
+          </div>
+
+          <article className="problem-card">
+            <div className="eyebrow-rule" />
+            <p className="text-xs uppercase tracking-[0.22em] text-muted-foreground">What Lands</p>
+            <p className="mt-4 font-display text-3xl leading-tight text-foreground">
+              “This thing is interesting, but kind of hard.”
+            </p>
+            <p className="mt-4 text-base leading-7 text-muted-foreground">
+              The fallback words are nearby, so the sentence reaches for them again. The meaning gets
+              there diluted.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="compare-chip compare-chip--avoid">thing</span>
+              <span className="compare-chip compare-chip--avoid">interesting</span>
+              <span className="compare-chip compare-chip--avoid">hard</span>
+            </div>
+          </article>
+        </div>
+
+        <div className="mt-5 mini-note">
+          <p className="text-base leading-8 text-foreground/90">
+            Most software points at the right-hand side after it happens. Eloq changes the vocabulary
+            bank upstream, so the draft has better words available before it goes flat.
+          </p>
         </div>
       </div>
     </section>

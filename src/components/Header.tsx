@@ -4,9 +4,9 @@ export const Header = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 py-4 md:px-6">
       <div className="site-container">
-        <div className="flex items-center justify-between rounded-2xl border border-border bg-[rgba(255,255,255,0.86)] px-4 py-3 shadow-[0_8px_24px_rgba(12,10,8,0.06)] backdrop-blur md:px-6">
+        <div className="site-header-bar">
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-[#e4f222] font-mono text-sm text-foreground">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-mono text-sm text-primary-foreground">
               E
             </div>
             <div>
@@ -21,19 +21,13 @@ export const Header = () => {
             <a href="#pain" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
               Problem
             </a>
-            <a href="#benefits" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              Benefits
-            </a>
             <a href="#how-it-works" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
               How it works
             </a>
-            <a href="#consumers" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              Consumers
-            </a>
           </nav>
 
-          <Button asChild className="rounded-[10px] border-0 bg-[#e4f222] px-5 text-sm text-foreground shadow-none hover:bg-[#f5ff78]">
-            <a href="#waitlist">Join Waitlist</a>
+          <Button asChild className="rounded-full border-0 bg-primary px-5 text-sm text-primary-foreground shadow-none hover:opacity-90">
+            <a href="#waitlist">Join</a>
           </Button>
         </div>
       </div>

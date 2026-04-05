@@ -35,7 +35,7 @@ export default function InlineWaitlistForm({
       return "text-[hsl(var(--destructive))]";
     }
     if (isJoined) {
-      return "text-[hsl(var(--primary))]";
+      return "text-primary";
     }
     return "text-muted-foreground";
   }, [isJoined, status]);
@@ -94,39 +94,41 @@ export default function InlineWaitlistForm({
       className={cn("w-full max-w-xl", className)}
       aria-label="Eloq waitlist form"
     >
-      <div className="eloq-pill-field">
-        <Input
-          type="email"
-          placeholder="you@company.com"
-          value={email}
-          onChange={(event) => {
-            setEmail(event.target.value);
-            if (status === "error") {
-              setStatus("idle");
-              setMessage(null);
-            }
-          }}
-          className="eloq-pill-input"
-          disabled={isLoading || isJoined}
-          aria-invalid={status === "error"}
-        />
-        <Button
-          type="submit"
-          disabled={isLoading || isJoined || !isValidEmail(email)}
-          className="eloq-pill-submit"
-        >
-          {isJoined ? "Joined" : isLoading ? "Joining..." : "Join Waitlist"}
-        </Button>
-      </div>
+      <div className="eloq-form-frame">
+        <div className="eloq-pill-field">
+          <Input
+            type="email"
+            placeholder="you@company.com"
+            value={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+              if (status === "error") {
+                setStatus("idle");
+                setMessage(null);
+              }
+            }}
+            className="eloq-pill-input"
+            disabled={isLoading || isJoined}
+            aria-invalid={status === "error"}
+          />
+          <Button
+            type="submit"
+            disabled={isLoading || isJoined}
+            className="eloq-pill-submit"
+          >
+            {isJoined ? "Joined" : isLoading ? "Joining..." : "Join"}
+          </Button>
+        </div>
 
-      <div
-        className={cn(
-          "mt-3 text-sm",
-          align === "center" ? "text-center" : "text-left",
-          noteToneClass
-        )}
-      >
-        {message ?? caption}
+        <div
+          className={cn(
+            "mt-3 text-sm",
+            align === "center" ? "text-center" : "text-left",
+            noteToneClass
+          )}
+        >
+          {message ?? caption}
+        </div>
       </div>
     </form>
   );
