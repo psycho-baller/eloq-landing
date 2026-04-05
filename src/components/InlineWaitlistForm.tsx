@@ -21,7 +21,7 @@ export default function InlineWaitlistForm({
   className,
   platform = "macOS",
   align = "left",
-  caption = "Join the waitlist for macOS early access.",
+  caption = "",
 }: InlineWaitlistFormProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<SubmitStatus>("idle");
@@ -72,12 +72,12 @@ export default function InlineWaitlistForm({
 
       if (data.alreadyAdded) {
         setStatus("already-added");
-        setMessage("We already have your email. You are still on the macOS waitlist.");
+        setMessage("We already have your email.");
         return;
       }
 
       setStatus("success");
-      setMessage("You are on the Eloq macOS early access list.");
+      setMessage("You are on the waitlist.");
     } catch (error) {
       setStatus("error");
       setMessage(
@@ -87,6 +87,8 @@ export default function InlineWaitlistForm({
       );
     }
   }
+
+  const note = message ?? caption;
 
   return (
     <form
@@ -120,15 +122,17 @@ export default function InlineWaitlistForm({
           </Button>
         </div>
 
-        <div
-          className={cn(
-            "mt-3 text-sm",
-            align === "center" ? "text-center" : "text-left",
-            noteToneClass
-          )}
-        >
-          {message ?? caption}
-        </div>
+        {note ? (
+          <div
+            className={cn(
+              "mt-3 text-sm",
+              align === "center" ? "text-center" : "text-left",
+              noteToneClass
+            )}
+          >
+            {note}
+          </div>
+        ) : null}
       </div>
     </form>
   );

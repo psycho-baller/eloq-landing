@@ -2,37 +2,21 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border px-6 py-12">
-      <div className="site-container">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-[#e4f222] font-mono text-sm text-foreground">
-              E
-            </div>
-            <div>
-              <p className="font-display text-2xl leading-none text-foreground">Eloq</p>
-              <p className="text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
-                vocabulary graph for clearer writing
-              </p>
-            </div>
+    <footer className="border-t border-border px-6 py-10">
+      <div className="site-container flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <p className="font-display text-2xl leading-none text-foreground">Eloq</p>
+
+        <nav className="flex items-center gap-6">
+          <Link to="/privacy" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            Privacy
           </Link>
-
-          <nav className="flex items-center gap-8">
-            <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Privacy
-            </Link>
-            <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Terms
-            </Link>
-            <a href="mailto:hello@orbitlabs.studio" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Contact
-            </a>
-          </nav>
-
-          <p className="text-sm text-muted-foreground">
-            © 2026 Eloq by <a href="https://orbitlabs.studio" className="text-foreground hover:underline transition-colors" target="_blank" rel="noreferrer">Orbit Labs</a>
-          </p>
-        </div>
+          <Link to="/terms" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            Terms
+          </Link>
+          <a href="mailto:hello@orbitlabs.studio" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            Contact
+          </a>
+        </nav>
       </div>
     </footer>
   );
