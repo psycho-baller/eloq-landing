@@ -54,8 +54,8 @@
     --field-line: rgba(12, 10, 8, 0.08);
     --panel-shadow: 0 18px 42px rgba(12, 10, 8, 0.06);
 
-    --space-glow: rgba(228, 242, 34, 0.18);
-    --space-glow-secondary: rgba(23, 51, 45, 0.1);
+    --space-glow: rgba(228, 242, 34, 0.14);
+    --space-glow-secondary: rgba(228, 242, 34, 0.08);
     --hero-ring: rgba(23, 51, 45, 0.08);
     --hero-ring-strong: rgba(228, 242, 34, 0.22);
 
@@ -116,8 +116,8 @@
       --field-line: rgba(255, 255, 255, 0.06);
       --panel-shadow: 0 26px 60px rgba(0, 0, 0, 0.34);
 
-      --space-glow: rgba(217, 239, 89, 0.16);
-      --space-glow-secondary: rgba(23, 51, 45, 0.48);
+      --space-glow: rgba(217, 239, 89, 0.18);
+      --space-glow-secondary: rgba(217, 239, 89, 0.1);
       --hero-ring: rgba(255, 255, 255, 0.08);
       --hero-ring-strong: rgba(217, 239, 89, 0.18);
 
@@ -143,11 +143,7 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-family: "Source Sans 3", system-ui, sans-serif;
     min-height: 100vh;
-    background:
-      radial-gradient(circle at 50% 0%, var(--space-glow) 0%, transparent 36%),
-      radial-gradient(circle at 85% 12%, var(--space-glow-secondary) 0%, transparent 24%),
-      radial-gradient(circle at 15% 18%, var(--space-glow-secondary) 0%, transparent 22%),
-      linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--background)) 100%);
+    background: hsl(var(--background));
   }
 
   body::before {
@@ -264,13 +260,6 @@
     background: var(--surface-shell);
   }
 
-  .orbit-gradient {
-    background-image: linear-gradient(90deg, #87d8ff 0%, #c4efb0 48%, #e4f222 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
   .orbit-hero-glow {
     position: absolute;
     left: 50%;
@@ -280,8 +269,7 @@
     transform: translateX(-50%);
     pointer-events: none;
     border-radius: 999px;
-    background:
-      radial-gradient(circle, var(--space-glow) 0%, var(--space-glow-secondary) 40%, transparent 72%);
+    background: var(--space-glow);
     filter: blur(28px);
     opacity: 1;
   }
