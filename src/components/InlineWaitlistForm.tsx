@@ -1,7 +1,5 @@
 import { useMemo, useState } from "react";
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type SubmitStatus = "idle" | "loading" | "success" | "already-added" | "error";
@@ -96,8 +94,8 @@ export default function InlineWaitlistForm({
       className={cn("w-full max-w-xl", className)}
       aria-label="Eloq waitlist form"
     >
-      <div className="eloq-pill-field">
-        <Input
+      <div className="flex items-center gap-3 rounded-full border border-border/50 bg-background/50 py-[6px] pl-5 pr-[8px] backdrop-blur-sm">
+        <input
           type="email"
           placeholder="you@company.com"
           value={email}
@@ -108,17 +106,17 @@ export default function InlineWaitlistForm({
               setMessage(null);
             }
           }}
-          className="eloq-pill-input"
+          className="h-10 min-w-0 flex-1 appearance-none border-0 bg-transparent px-0 text-base leading-none text-foreground outline-none placeholder:text-muted-foreground/60"
           disabled={isLoading || isJoined}
           aria-invalid={status === "error"}
         />
-        <Button
+        <button
           type="submit"
           disabled={isLoading || isJoined}
-          className="eloq-pill-submit"
+          className="h-10 min-w-[6.1rem] shrink-0 rounded-full bg-primary px-5 text-base font-medium leading-none text-primary-foreground transition-colors duration-200 hover:bg-[#f5ff78] disabled:cursor-default disabled:opacity-100"
         >
           {isJoined ? "Joined" : isLoading ? "Joining..." : "Join"}
-        </Button>
+        </button>
       </div>
 
       {note ? (
